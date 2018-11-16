@@ -14,6 +14,8 @@
 <main>
     <article>
         <p>WELKOM</p>
+        <p>Aantal keren veranderd van taal: ${sessionScope.numberOfSwitches}</p>
+        <p>Je vorige taal was ${sessionScope.previousLanguage}.</p>
     </article>
 </main>
 </body>

@@ -63,7 +63,10 @@ public class Controller extends HttpServlet {
                 session.setAttribute("numberOfSwitches", 1);
             else
                 session.setAttribute("numberOfSwitches", (int) session.getAttribute("numberOfSwitches") + 1);
+            session.setAttribute("previousLanguage",currentLanguage);
+
         }
+
 
         return getPage(newLanguage);
     }

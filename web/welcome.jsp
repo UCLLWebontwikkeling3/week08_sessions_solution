@@ -14,7 +14,8 @@
 <main>
     <article>
         <p>WELCOME</p>
-    </article>
+        <p>Number of switches: ${sessionScope.numberOfSwitches}</p>
+        <p>Your previous language was ${sessionScope.previousLanguage}.</p>    </article>
 </main>
 </body>
 </html>

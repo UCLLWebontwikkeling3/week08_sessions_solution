@@ -73,7 +73,7 @@ public class Servlet extends HttpServlet {
         HttpSession session = request.getSession();
         //count number of language switches
         if (!oldLanguage.equals(newLanguage)) {
-            session.setAttribute("previousLanguage",newLanguage);
+            session.setAttribute("previousLanguage",oldLanguage);
             session.setAttribute("numberOfSwitches", (int) session.getAttribute("numberOfSwitches") + 1);
         }
 
